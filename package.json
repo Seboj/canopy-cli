@@ -1,0 +1,53 @@
+{
+  "name": "canopy-cc",
+  "version": "0.1.0",
+  "description": "A meta-prompting, context engineering and spec-driven development system for AI coding agents. The Canopy Method for Claude Code, OpenCode, Gemini, and Codex.",
+  "bin": {
+    "canopy-cc": "bin/install.js"
+  },
+  "files": [
+    "bin",
+    "commands",
+    "canopy",
+    "agents",
+    "hooks/dist",
+    "scripts"
+  ],
+  "keywords": [
+    "canopy",
+    "canopy-method",
+    "claude",
+    "claude-code",
+    "ai",
+    "meta-prompting",
+    "context-engineering",
+    "spec-driven-development",
+    "gemini",
+    "gemini-cli",
+    "codex",
+    "codex-cli",
+    "project-intelligence"
+  ],
+  "author": "Nfinit Monkeys",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seboj/canopy-cli.git"
+  },
+  "homepage": "https://canopymethod.ai",
+  "bugs": {
+    "url": "https://github.com/Seboj/canopy-cli/issues"
+  },
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "scripts": {
+    "build:hooks": "node scripts/build-hooks.js",
+    "prepublishOnly": "npm run build:hooks",
+    "test": "node --test tests/*.test.cjs"
+  }
+}
